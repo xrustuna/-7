@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Light from './components/Light';
 import TrafficLights from './components/TrafficLights';
@@ -8,7 +8,7 @@ import Header from './components/Header';
 import Home from './Pages/Home';
 
 const App = () => {
-  const [isVertical, setIsVertical] = useState(false);
+  const [setIsVertical] = useState(false);
   const [stats, setStats] = useState({});
 
   const handleTrafficLightClick = (color) => {
